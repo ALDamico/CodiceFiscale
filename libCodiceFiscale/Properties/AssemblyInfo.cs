@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CodiceFiscaleUI")]
+[assembly: AssemblyTitle("libCodiceFiscale")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CodiceFiscaleUI")]
+[assembly: AssemblyProduct("libCodiceFiscale")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d05918c5-093e-47ac-b38e-206151f22c9f")]
+[assembly: Guid("73843215-e18b-4de0-8cb6-dd83d32e408a")]
 
 // Version information for an assembly consists of the following four values:
 //

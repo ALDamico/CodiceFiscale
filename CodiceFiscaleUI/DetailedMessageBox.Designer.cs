@@ -1,6 +1,6 @@
 ﻿namespace CodiceFiscaleUI
 {
-    partial class Form1
+    partial class DetailedMessageBox
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.textBoxMessageBox1 = new CodiceFiscaleUI.TextBoxMessageBox();
+            this.SuspendLayout();
+            // 
+            // textBoxMessageBox1
+            // 
+            this.textBoxMessageBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBoxMessageBox1.Name = "textBoxMessageBox1";
+            this.textBoxMessageBox1.Size = new System.Drawing.Size(723, 439);
+            this.textBoxMessageBox1.TabIndex = 0;
+            // 
+            // DetailedMessageBox
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.textBoxMessageBox1);
+            this.Name = "DetailedMessageBox";
+            this.Text = "DetailedMessageBox";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private TextBoxMessageBox textBoxMessageBox1;
     }
 }
-

@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodiceFiscaleUI", "CodiceFiscaleUI\CodiceFiscaleUI.csproj", "{D05918C5-093E-47AC-B38E-206151F22C9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libCodiceFiscale", "libCodiceFiscale\libCodiceFiscale.csproj", "{73843215-E18B-4DE0-8CB6-DD83D32E408A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libCodiceFiscale.Test", "libCodiceFiscale.Test\libCodiceFiscale.Test.csproj", "{FAC3D996-0C80-4DF6-ABF2-D6E581009C8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D05918C5-093E-47AC-B38E-206151F22C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D05918C5-093E-47AC-B38E-206151F22C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D05918C5-093E-47AC-B38E-206151F22C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73843215-E18B-4DE0-8CB6-DD83D32E408A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73843215-E18B-4DE0-8CB6-DD83D32E408A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73843215-E18B-4DE0-8CB6-DD83D32E408A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73843215-E18B-4DE0-8CB6-DD83D32E408A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC3D996-0C80-4DF6-ABF2-D6E581009C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC3D996-0C80-4DF6-ABF2-D6E581009C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC3D996-0C80-4DF6-ABF2-D6E581009C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC3D996-0C80-4DF6-ABF2-D6E581009C8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
