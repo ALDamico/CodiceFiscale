@@ -14,7 +14,7 @@ namespace libCodiceFiscale.Models
             {
                 Code = (from country in db.Stati
                         where country.Nome == name
-                        select country).ToString();
+                        select country.Codice).FirstOrDefault();
             }
         }
         #endregion

@@ -177,6 +177,7 @@
     <Compile Include="Interfaces\IPlace.cs" />
     <Compile Include="Models\ForeignCountry.cs" />
     <Compile Include="Models\ItalianMunicipality.cs" />
+    <Compile Include="Models\OmocodeGenerator.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

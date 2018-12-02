@@ -2,6 +2,7 @@
 using libCodiceFiscale.Extensions;
 using libCodiceFiscale.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace libCodiceFiscale.Models
@@ -89,7 +90,7 @@ namespace libCodiceFiscale.Models
         }
         #endregion
 
-        #region GeneratorMethods
+        #region Generator Methods
         /// <summary>
         /// Genera il codice di tre lettere del cognome della persona corrente.
         /// </summary>
@@ -255,6 +256,14 @@ namespace libCodiceFiscale.Models
         public void GetPlaceOfBirth()
         {
             PlaceOfBirth = _currentPerson.PlaceOfBirth;
+        }
+
+        public List<string> GenerateOmocodes()
+        {
+            GenerateFiscalCode();
+            OmocodeGenerator.InitialFiscalCode = FiscalCode;
+            OmocodeGenerator.GenerateOmocodes();
+            return OmocodeGenerator.OmocodeFiscalCodes;
         }
         #endregion
 

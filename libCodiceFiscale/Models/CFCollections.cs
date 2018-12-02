@@ -116,6 +116,19 @@ namespace libCodiceFiscale.Models
                 CheckDigits.Add(i, digit);
                 digit++;
             }
+
+            //Inizializzazione del dizionario di sostituzione degli omocodi
+            OmocodeSubstitutionChars = new Dictionary<char, char>();
+            OmocodeSubstitutionChars.Add('0', 'L');
+            OmocodeSubstitutionChars.Add('1', 'M');
+            OmocodeSubstitutionChars.Add('2', 'N');
+            OmocodeSubstitutionChars.Add('3', 'P');
+            OmocodeSubstitutionChars.Add('4', 'Q');
+            OmocodeSubstitutionChars.Add('5', 'R');
+            OmocodeSubstitutionChars.Add('6', 'S');
+            OmocodeSubstitutionChars.Add('7', 'T');
+            OmocodeSubstitutionChars.Add('8', 'U');
+            OmocodeSubstitutionChars.Add('9', 'V');
         }
         #endregion
 
@@ -139,6 +152,8 @@ namespace libCodiceFiscale.Models
         /// Un dizionario che mette in relazione i possibili valori della somma di controllo e il carattere di controllo da generare.
         /// </summary>
         public static readonly Dictionary<int, char> CheckDigits;
+
+        public static readonly Dictionary<char, char> OmocodeSubstitutionChars;
         #endregion
     }
 }

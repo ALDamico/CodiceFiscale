@@ -23,6 +23,22 @@ namespace CodiceFiscaleUI
             drpProvince.DataSource = controller.Provinces;
             controller.RetrieveForeignCountriesAsList();
             drpForeignCountries.DataSource = controller.ForeignCounties;
+            ResetControls();
+        }
+
+        private void ResetControls()
+        {
+            foreach (Control c in grpPersonalInfo.Controls)
+            {
+                if (c is TextBox)
+                {
+                    c.Text = "";
+                }
+            }
+            pnlAbroad.Visible = false;
+            pnlItaly.Visible = false;
+            txtCF.Text = "";
+            btnCopyToClipboard.Enabled = false;
         }
 
         private void btnExecute_Click(object sender, EventArgs e)
@@ -41,9 +57,10 @@ namespace CodiceFiscaleUI
             }
 
             controller.SetPersonValues(name, surname, dateOfBirth, gender, controller.CurrentPlace);
-            
+
             controller.Generator.GenerateFiscalCode();
-            lblCF.Text = controller.Generator.FiscalCode;
+            txtCF.Text = controller.Generator.FiscalCode;
+            btnCopyToClipboard.Enabled = true;
         }
 
         private void drpProvince_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,6 +91,30 @@ namespace CodiceFiscaleUI
                 pnlItaly.Visible = false;
                 pnlAbroad.Visible = true;
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            var answer = MessageBox.Show("Sei sicuro di voler reimpostare i valori?", "Conferma reset", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (answer == DialogResult.Yes)
+            {
+                ResetControls();
+            }
+        }
+
+        private void btnCopyToClipboard_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Clipboard.SetText(txtCF.Text);
+            }
+            catch (Exception)
+
+            {
+
+            }
+            ttCopiedToClipBoard.Show("Testo copiato negli appunti!", txtCF, 1000);
+
         }
     }
 }
