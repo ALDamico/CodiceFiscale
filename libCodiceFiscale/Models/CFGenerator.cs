@@ -235,6 +235,27 @@ namespace libCodiceFiscale.Models
             FiscalCode += CheckDigit;
         }
 
+        public static char CalculateCheckDigit(string s)
+        {
+            if (s.Length != 15)
+            {
+                throw new Exception("Lunghezza della stringa di input non valida!");
+            }
+            int evenSum = 0, oddSum = 0;
+            for (int i = 0; i < 14; i++)
+            {
+                if ((i + 1) % 2 == 0)
+                {
+                    evenSum += CFCollections.EvenDigitCheck[s[i]];
+                }
+                else
+                {
+                    oddSum += CFCollections.OddDigitCheck[s[i]];
+                }
+            }
+            int digit = (evenSum + oddSum) % 26;
+            return CFCollections.CheckDigits[digit];
+        }
         private void CalculateCheckDigit()
         {
             int evenSum = 0, oddSum = 0;

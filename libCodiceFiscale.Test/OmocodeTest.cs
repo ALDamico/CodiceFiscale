@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using libCodiceFiscale.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using libCodiceFiscale.Models;
+using System;
+using System.Collections.Generic;
 
 namespace libCodiceFiscale.Test
 {
@@ -14,7 +14,7 @@ namespace libCodiceFiscale.Test
             string CF = "DMCNRL90E03B202A";
             OmocodeGenerator.InitialFiscalCode = CF;
             OmocodeGenerator.GenerateOmocodes();
-            Assert.AreEqual(9, OmocodeGenerator.OmocodeFiscalCodes.Count);
+            Assert.AreEqual(8, OmocodeGenerator.OmocodeFiscalCodes.Count);
         }
     }
 }

@@ -349,7 +349,7 @@
     <value>7</value>
   </data>
   <data name="grpPersonalInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 18</value>
+    <value>518, 65</value>
   </data>
   <data name="grpPersonalInfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -667,7 +667,7 @@
     <value>3</value>
   </data>
   <data name="grpPlace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 158</value>
+    <value>518, 205</value>
   </data>
   <data name="grpPlace.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 135</value>
@@ -697,7 +697,7 @@
     <value>Microsoft Sans Serif, 20pt, style=Bold</value>
   </data>
   <data name="lblCF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 241</value>
+    <value>11, 288</value>
   </data>
   <data name="lblCF.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -750,35 +750,11 @@
   <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="pbIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 18</value>
-  </data>
-  <data name="pbIcon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="pbIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 135</value>
-  </data>
-  <data name="pbIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;pbIcon.Name" xml:space="preserve">
-    <value>pbIcon</value>
-  </data>
-  <data name="&gt;&gt;pbIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbIcon.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbIcon.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="txtCF.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 25pt, style=Bold</value>
   </data>
   <data name="txtCF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 275</value>
+    <value>17, 322</value>
   </data>
   <data name="txtCF.Size" type="System.Drawing.Size, System.Drawing">
     <value>442, 45</value>
@@ -796,10 +772,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtCF.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnCopyToClipboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 342</value>
+    <value>17, 385</value>
   </data>
   <data name="btnCopyToClipboard.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 48</value>
@@ -820,11 +796,167 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCopyToClipboard.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="ttCopiedToClipBoard.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>183, 17</value>
+  </metadata>
+  <data name="nuovaSessioneToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 22</value>
+  </data>
+  <data name="nuovaSessioneToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Nuova sessione</value>
+  </data>
+  <data name="salvaSuFileDiTestoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 22</value>
+  </data>
+  <data name="salvaSuFileDiTestoToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Salva su file di testo...</value>
+  </data>
+  <data name="esciToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 22</value>
+  </data>
+  <data name="esciToolStripMenuItem.Text" xml:space="preserve">
+    <value>Esci</value>
+  </data>
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="visualizzaCFOmocodiciToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 22</value>
+  </data>
+  <data name="visualizzaCFOmocodiciToolStripMenuItem.Text" xml:space="preserve">
+    <value>Visualizza CF omocodici</value>
+  </data>
+  <data name="verificaValiditàCFToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 22</value>
+  </data>
+  <data name="verificaValiditàCFToolStripMenuItem.Text" xml:space="preserve">
+    <value>Verifica validità CF</value>
+  </data>
+  <data name="extraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="extraToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Extra</value>
+  </data>
+  <data name="informazioniSuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="informazioniSuToolStripMenuItem.Text" xml:space="preserve">
+    <value>Informazioni su... (&amp;A)</value>
+  </data>
+  <data name="guidaHToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="guidaHToolStripMenuItem.Text" xml:space="preserve">
+    <value>Guida (&amp;H)</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 20</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>780, 24</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lstOmocode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="lstOmocode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>438, 160</value>
+  </data>
+  <data name="lstOmocode.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lstOmocode.Name" xml:space="preserve">
+    <value>lstOmocode</value>
+  </data>
+  <data name="&gt;&gt;lstOmocode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstOmocode.Parent" xml:space="preserve">
+    <value>pnlOmocode</value>
+  </data>
+  <data name="&gt;&gt;lstOmocode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCopyListToClipboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 169</value>
+  </data>
+  <data name="btnCopyListToClipboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 47</value>
+  </data>
+  <data name="btnCopyListToClipboard.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnCopyListToClipboard.Text" xml:space="preserve">
+    <value>Copia lista negli appunti</value>
+  </data>
+  <data name="&gt;&gt;btnCopyListToClipboard.Name" xml:space="preserve">
+    <value>btnCopyListToClipboard</value>
+  </data>
+  <data name="&gt;&gt;btnCopyListToClipboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCopyListToClipboard.Parent" xml:space="preserve">
+    <value>pnlOmocode</value>
+  </data>
+  <data name="&gt;&gt;btnCopyListToClipboard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlOmocode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 65</value>
+  </data>
+  <data name="pnlOmocode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>441, 223</value>
+  </data>
+  <data name="pnlOmocode.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="pnlOmocode.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlOmocode.Name" xml:space="preserve">
+    <value>pnlOmocode</value>
+  </data>
+  <data name="&gt;&gt;pnlOmocode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlOmocode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlOmocode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3177,6 +3309,66 @@
   </data>
   <data name="&gt;&gt;ttCopiedToClipBoard.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
+    <value>fileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nuovaSessioneToolStripMenuItem.Name" xml:space="preserve">
+    <value>nuovaSessioneToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;nuovaSessioneToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salvaSuFileDiTestoToolStripMenuItem.Name" xml:space="preserve">
+    <value>salvaSuFileDiTestoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;salvaSuFileDiTestoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;esciToolStripMenuItem.Name" xml:space="preserve">
+    <value>esciToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;esciToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;extraToolStripMenuItem.Name" xml:space="preserve">
+    <value>extraToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;extraToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;visualizzaCFOmocodiciToolStripMenuItem.Name" xml:space="preserve">
+    <value>visualizzaCFOmocodiciToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;visualizzaCFOmocodiciToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;verificaValiditàCFToolStripMenuItem.Name" xml:space="preserve">
+    <value>verificaValiditàCFToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;verificaValiditàCFToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;informazioniSuToolStripMenuItem.Name" xml:space="preserve">
+    <value>informazioniSuToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;informazioniSuToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guidaHToolStripMenuItem.Name" xml:space="preserve">
+    <value>guidaHToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;guidaHToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMain</value>

@@ -41,10 +41,10 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnExecute = new System.Windows.Forms.Button();
             this.grpPlace = new System.Windows.Forms.GroupBox();
-            this.pnlItaly = new System.Windows.Forms.Panel();
             this.pnlAbroad = new System.Windows.Forms.Panel();
             this.drpForeignCountries = new System.Windows.Forms.ComboBox();
             this.lblForeignCountry = new System.Windows.Forms.Label();
+            this.pnlItaly = new System.Windows.Forms.Panel();
             this.drpMunicipality = new System.Windows.Forms.ComboBox();
             this.lblMunicipality = new System.Windows.Forms.Label();
             this.drpProvince = new System.Windows.Forms.ComboBox();
@@ -53,15 +53,29 @@
             this.lblItalyOrAbroad = new System.Windows.Forms.Label();
             this.lblCF = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
-            this.pbIcon = new System.Windows.Forms.PictureBox();
             this.txtCF = new System.Windows.Forms.TextBox();
             this.btnCopyToClipboard = new System.Windows.Forms.Button();
             this.ttCopiedToClipBoard = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuovaSessioneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salvaSuFileDiTestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.esciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.extraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualizzaCFOmocodiciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verificaValiditàCFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.informazioniSuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guidaHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlOmocode = new System.Windows.Forms.FlowLayoutPanel();
+            this.lstOmocode = new System.Windows.Forms.ListBox();
+            this.btnCopyListToClipboard = new System.Windows.Forms.Button();
             this.grpPersonalInfo.SuspendLayout();
             this.grpPlace.SuspendLayout();
-            this.pnlItaly.SuspendLayout();
             this.pnlAbroad.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
+            this.pnlItaly.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.pnlOmocode.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpPersonalInfo
@@ -144,15 +158,6 @@
             this.grpPlace.Name = "grpPlace";
             this.grpPlace.TabStop = false;
             // 
-            // pnlItaly
-            // 
-            this.pnlItaly.Controls.Add(this.drpMunicipality);
-            this.pnlItaly.Controls.Add(this.lblMunicipality);
-            this.pnlItaly.Controls.Add(this.drpProvince);
-            this.pnlItaly.Controls.Add(this.lblProvince);
-            resources.ApplyResources(this.pnlItaly, "pnlItaly");
-            this.pnlItaly.Name = "pnlItaly";
-            // 
             // pnlAbroad
             // 
             this.pnlAbroad.Controls.Add(this.drpForeignCountries);
@@ -171,6 +176,15 @@
             // 
             resources.ApplyResources(this.lblForeignCountry, "lblForeignCountry");
             this.lblForeignCountry.Name = "lblForeignCountry";
+            // 
+            // pnlItaly
+            // 
+            this.pnlItaly.Controls.Add(this.drpMunicipality);
+            this.pnlItaly.Controls.Add(this.lblMunicipality);
+            this.pnlItaly.Controls.Add(this.drpProvince);
+            this.pnlItaly.Controls.Add(this.lblProvince);
+            resources.ApplyResources(this.pnlItaly, "pnlItaly");
+            this.pnlItaly.Name = "pnlItaly";
             // 
             // drpMunicipality
             // 
@@ -225,13 +239,6 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // pbIcon
-            // 
-            this.pbIcon.Image = global::CodiceFiscaleUI.Properties.Resources.icon;
-            resources.ApplyResources(this.pbIcon, "pbIcon");
-            this.pbIcon.Name = "pbIcon";
-            this.pbIcon.TabStop = false;
-            // 
             // txtCF
             // 
             this.txtCF.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -246,19 +253,114 @@
             this.btnCopyToClipboard.UseVisualStyleBackColor = true;
             this.btnCopyToClipboard.Click += new System.EventHandler(this.btnCopyToClipboard_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.extraToolStripMenuItem,
+            this.toolStripMenuItem1});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuovaSessioneToolStripMenuItem,
+            this.salvaSuFileDiTestoToolStripMenuItem,
+            this.esciToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            // 
+            // nuovaSessioneToolStripMenuItem
+            // 
+            this.nuovaSessioneToolStripMenuItem.Name = "nuovaSessioneToolStripMenuItem";
+            resources.ApplyResources(this.nuovaSessioneToolStripMenuItem, "nuovaSessioneToolStripMenuItem");
+            this.nuovaSessioneToolStripMenuItem.Click += new System.EventHandler(this.nuovaSessioneToolStripMenuItem_Click);
+            // 
+            // salvaSuFileDiTestoToolStripMenuItem
+            // 
+            this.salvaSuFileDiTestoToolStripMenuItem.Name = "salvaSuFileDiTestoToolStripMenuItem";
+            resources.ApplyResources(this.salvaSuFileDiTestoToolStripMenuItem, "salvaSuFileDiTestoToolStripMenuItem");
+            this.salvaSuFileDiTestoToolStripMenuItem.Click += new System.EventHandler(this.salvaSuFileDiTestoToolStripMenuItem_Click);
+            // 
+            // esciToolStripMenuItem
+            // 
+            this.esciToolStripMenuItem.Name = "esciToolStripMenuItem";
+            resources.ApplyResources(this.esciToolStripMenuItem, "esciToolStripMenuItem");
+            // 
+            // extraToolStripMenuItem
+            // 
+            this.extraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.visualizzaCFOmocodiciToolStripMenuItem,
+            this.verificaValiditàCFToolStripMenuItem});
+            this.extraToolStripMenuItem.Name = "extraToolStripMenuItem";
+            resources.ApplyResources(this.extraToolStripMenuItem, "extraToolStripMenuItem");
+            // 
+            // visualizzaCFOmocodiciToolStripMenuItem
+            // 
+            this.visualizzaCFOmocodiciToolStripMenuItem.CheckOnClick = true;
+            this.visualizzaCFOmocodiciToolStripMenuItem.Name = "visualizzaCFOmocodiciToolStripMenuItem";
+            resources.ApplyResources(this.visualizzaCFOmocodiciToolStripMenuItem, "visualizzaCFOmocodiciToolStripMenuItem");
+            this.visualizzaCFOmocodiciToolStripMenuItem.Click += new System.EventHandler(this.visualizzaCFOmocodiciToolStripMenuItem_Click);
+            // 
+            // verificaValiditàCFToolStripMenuItem
+            // 
+            this.verificaValiditàCFToolStripMenuItem.Name = "verificaValiditàCFToolStripMenuItem";
+            resources.ApplyResources(this.verificaValiditàCFToolStripMenuItem, "verificaValiditàCFToolStripMenuItem");
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informazioniSuToolStripMenuItem,
+            this.guidaHToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            // 
+            // informazioniSuToolStripMenuItem
+            // 
+            this.informazioniSuToolStripMenuItem.Name = "informazioniSuToolStripMenuItem";
+            resources.ApplyResources(this.informazioniSuToolStripMenuItem, "informazioniSuToolStripMenuItem");
+            // 
+            // guidaHToolStripMenuItem
+            // 
+            this.guidaHToolStripMenuItem.Name = "guidaHToolStripMenuItem";
+            resources.ApplyResources(this.guidaHToolStripMenuItem, "guidaHToolStripMenuItem");
+            // 
+            // pnlOmocode
+            // 
+            this.pnlOmocode.Controls.Add(this.lstOmocode);
+            this.pnlOmocode.Controls.Add(this.btnCopyListToClipboard);
+            resources.ApplyResources(this.pnlOmocode, "pnlOmocode");
+            this.pnlOmocode.Name = "pnlOmocode";
+            // 
+            // lstOmocode
+            // 
+            this.lstOmocode.FormattingEnabled = true;
+            resources.ApplyResources(this.lstOmocode, "lstOmocode");
+            this.lstOmocode.Name = "lstOmocode";
+            // 
+            // btnCopyListToClipboard
+            // 
+            resources.ApplyResources(this.btnCopyListToClipboard, "btnCopyListToClipboard");
+            this.btnCopyListToClipboard.Name = "btnCopyListToClipboard";
+            this.btnCopyListToClipboard.UseVisualStyleBackColor = true;
+            this.btnCopyListToClipboard.Click += new System.EventHandler(this.btnCopyListToClipboard_Click);
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pnlOmocode);
             this.Controls.Add(this.btnCopyToClipboard);
             this.Controls.Add(this.txtCF);
-            this.Controls.Add(this.pbIcon);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnExecute);
             this.Controls.Add(this.lblCF);
             this.Controls.Add(this.grpPlace);
             this.Controls.Add(this.grpPersonalInfo);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";
@@ -267,11 +369,13 @@
             this.grpPersonalInfo.PerformLayout();
             this.grpPlace.ResumeLayout(false);
             this.grpPlace.PerformLayout();
-            this.pnlItaly.ResumeLayout(false);
-            this.pnlItaly.PerformLayout();
             this.pnlAbroad.ResumeLayout(false);
             this.pnlAbroad.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
+            this.pnlItaly.ResumeLayout(false);
+            this.pnlItaly.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.pnlOmocode.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,10 +406,23 @@
         private System.Windows.Forms.ComboBox drpForeignCountries;
         private System.Windows.Forms.Label lblForeignCountry;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.PictureBox pbIcon;
         private System.Windows.Forms.TextBox txtCF;
         private System.Windows.Forms.Button btnCopyToClipboard;
         private System.Windows.Forms.ToolTip ttCopiedToClipBoard;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuovaSessioneToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salvaSuFileDiTestoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem esciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem informazioniSuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem guidaHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem extraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualizzaCFOmocodiciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verificaValiditàCFToolStripMenuItem;
+        private System.Windows.Forms.FlowLayoutPanel pnlOmocode;
+        private System.Windows.Forms.ListBox lstOmocode;
+        private System.Windows.Forms.Button btnCopyListToClipboard;
     }
 }
 
