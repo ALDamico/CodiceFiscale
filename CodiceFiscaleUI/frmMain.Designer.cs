@@ -59,7 +59,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuovaSessioneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salvaSuFileDiTestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.esciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.extraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizzaCFOmocodiciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -266,7 +265,6 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuovaSessioneToolStripMenuItem,
-            this.salvaSuFileDiTestoToolStripMenuItem,
             this.esciToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
@@ -277,16 +275,11 @@
             resources.ApplyResources(this.nuovaSessioneToolStripMenuItem, "nuovaSessioneToolStripMenuItem");
             this.nuovaSessioneToolStripMenuItem.Click += new System.EventHandler(this.nuovaSessioneToolStripMenuItem_Click);
             // 
-            // salvaSuFileDiTestoToolStripMenuItem
-            // 
-            this.salvaSuFileDiTestoToolStripMenuItem.Name = "salvaSuFileDiTestoToolStripMenuItem";
-            resources.ApplyResources(this.salvaSuFileDiTestoToolStripMenuItem, "salvaSuFileDiTestoToolStripMenuItem");
-            this.salvaSuFileDiTestoToolStripMenuItem.Click += new System.EventHandler(this.salvaSuFileDiTestoToolStripMenuItem_Click);
-            // 
             // esciToolStripMenuItem
             // 
             this.esciToolStripMenuItem.Name = "esciToolStripMenuItem";
             resources.ApplyResources(this.esciToolStripMenuItem, "esciToolStripMenuItem");
+            this.esciToolStripMenuItem.Click += new System.EventHandler(this.esciToolStripMenuItem_Click);
             // 
             // extraToolStripMenuItem
             // 
@@ -307,6 +300,7 @@
             // 
             this.verificaValiditàCFToolStripMenuItem.Name = "verificaValiditàCFToolStripMenuItem";
             resources.ApplyResources(this.verificaValiditàCFToolStripMenuItem, "verificaValiditàCFToolStripMenuItem");
+            this.verificaValiditàCFToolStripMenuItem.Click += new System.EventHandler(this.verificaValiditàCFToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -412,7 +406,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuovaSessioneToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salvaSuFileDiTestoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem esciToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem informazioniSuToolStripMenuItem;

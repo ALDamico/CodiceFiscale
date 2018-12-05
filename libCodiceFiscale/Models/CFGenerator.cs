@@ -242,7 +242,7 @@ namespace libCodiceFiscale.Models
                 throw new Exception("Lunghezza della stringa di input non valida!");
             }
             int evenSum = 0, oddSum = 0;
-            for (int i = 0; i < 14; i++)
+            for (int i = 0; i < 15; i++)
             {
                 if ((i + 1) % 2 == 0)
                 {

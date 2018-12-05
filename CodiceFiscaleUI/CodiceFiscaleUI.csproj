@@ -147,6 +147,12 @@
     <Compile Include="TextBoxMessageBox.Designer.cs">
       <DependentUpon>TextBoxMessageBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerificaValidita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerificaValidita.Designer.cs">
+      <DependentUpon>VerificaValidita.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DetailedMessageBox.resx">
       <DependentUpon>DetailedMessageBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +171,9 @@
     </Compile>
     <EmbeddedResource Include="TextBoxMessageBox.resx">
       <DependentUpon>TextBoxMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerificaValidita.resx">
+      <DependentUpon>VerificaValidita.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -3,15 +3,15 @@ using libCodiceFiscale.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Windows.Forms;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace CodiceFiscaleUI
 {
     public partial class frmMain : Form
     {
-        private MainController controller;
+        internal MainController controller;
 
         public frmMain()
         {
@@ -116,7 +116,10 @@ namespace CodiceFiscaleUI
 
         private void ResetConfirmation()
         {
-            var answer = MessageBox.Show("Sei sicuro di voler reimpostare i valori?", "Conferma reset", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            var answer = MessageBox.Show(
+                "Sei sicuro di voler reimpostare i valori?", "Conferma reset",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button2);
             if (answer == DialogResult.Yes)
             {
                 ResetControls();
@@ -162,7 +165,7 @@ namespace CodiceFiscaleUI
             saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
             saveDialog.CheckFileExists = true;
-            saveDialog.CreatePrompt = true;           saveDialog.DefaultExt = ".txt";
+            saveDialog.CreatePrompt = true; saveDialog.DefaultExt = ".txt";
             saveDialog.InitialDirectory = Environment.SpecialFolder.MyDocuments.ToString();
             saveDialog.FileName = DefaultSaveLocation;
         }
@@ -195,6 +198,23 @@ namespace CodiceFiscaleUI
                 MessageBox.Show(ex.Message, "Si è verificato un errore.", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
             }
             ttCopiedToClipBoard.Show("Elementi copiati negli appunti!", lstOmocode, 1000);
+        }
+
+        private void esciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var answer = MessageBox.Show("Sei sicuro di voler uscire?", "Conferma uscita", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
+            if (answer == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+        }
+
+        private void verificaValiditàCFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            var dialog = new VerificaValidita();
+            dialog.StartPosition = FormStartPosition.CenterParent;
+            dialog.ShowDialog(this);
         }
     }
 }
