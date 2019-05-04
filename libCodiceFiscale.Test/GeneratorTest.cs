@@ -33,7 +33,7 @@ namespace libCodiceFiscale.Test
                 Surname = "Damico",
                 DateOfBirth = new DateTime(1990, 5, 3),
                 Gender = 'M',
-                PlaceOfBirth = new ItalianMunicipality("BRONTE", "B202")
+                PlaceOfBirth = new Comuni_Italiani("BRONTE", "B202")
             };
             CFGenerator gen = new CFGenerator(p);
             gen.GenerateFiscalCode();
@@ -49,7 +49,7 @@ namespace libCodiceFiscale.Test
                 Surname = "Damico",
                 DateOfBirth = new DateTime(1955, 12, 4),
                 Gender = 'M',
-                PlaceOfBirth = new ItalianMunicipality("BRONTE", "B202")
+                PlaceOfBirth = new Comuni_Italiani("BRONTE", "B202")
             };
             CFGenerator gen = new CFGenerator(p);
             gen.GenerateFiscalCode();
@@ -64,7 +64,7 @@ namespace libCodiceFiscale.Test
                 Name = "Andrea Luciano",
                 Surname = "Damico",
                 DateOfBirth = new DateTime(1990, 5, 3),
-                PlaceOfBirth = new ItalianMunicipality("BRONTE", "B202"),
+                PlaceOfBirth = new Comuni_Italiani("BRONTE", "B202"),
                 Gender = 'M'
             };
             CFGenerator gen = new CFGenerator(p);

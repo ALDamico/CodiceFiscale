@@ -24,7 +24,7 @@ namespace libCodiceFiscale.Models
         /// <param name="placeName"></param>
         public CFGenerator(string placeName) : this()
         {
-            PlaceOfBirth = new ItalianMunicipality(placeName);
+            PlaceOfBirth = new Comuni_Italiani(placeName);
             if (PlaceOfBirth == null)
             {
                 PlaceOfBirth = new ForeignCountry(placeName);

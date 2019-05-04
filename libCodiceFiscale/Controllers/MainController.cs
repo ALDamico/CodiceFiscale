@@ -47,13 +47,13 @@ namespace libCodiceFiscale.Controllers
         {
             try
             {
-                using (var db = new LocalDataEntities())
+                using (var db = new LocalitaContext())
                 {
-                    foreach (var prov in db.Comuni)
+                    foreach (var prov in db.ItalianMunicipalities)
                     {
-                        if (Provinces.Contains(prov.Provincia) == false)
+                        if (Provinces.Contains(prov.Province) == false)
                         {
-                            Provinces.Add(prov.Provincia);
+                            Provinces.Add(prov.Province);
                         }
                     }
                 }
@@ -69,13 +69,13 @@ namespace libCodiceFiscale.Controllers
         {
             try
             {
-                using (var db = new LocalDataEntities())
+                using (var db = new LocalitaContext())
                 {
-                    foreach (var country in db.Stati)
+                    foreach (var country in db.ForeignCountries)
                     {
-                        if (ForeignCounties.Contains(country.Nome) == false)
+                        if (ForeignCounties.Contains(country.Name) == false)
                         {
-                            ForeignCounties.Add(country.Nome);
+                            ForeignCounties.Add(country.Name);
                         }
                     }
                 }
@@ -92,13 +92,13 @@ namespace libCodiceFiscale.Controllers
             CurrentProviceMunicipalities.Clear();
             try
             {
-                using (var db = new LocalDataEntities())
+                using (var db = new LocalitaContext())
                 {
-                    foreach (var municipality in db.Comuni)
+                    foreach (var municipality in db.ItalianMunicipalities)
                     {
-                        if (municipality.Provincia == CurrentProvince)
+                        if (municipality.Province == CurrentProvince)
                         {
-                            CurrentProviceMunicipalities.Add(municipality.Comune);
+                            CurrentProviceMunicipalities.Add(municipality.Code);
                         }
                     }
                 }

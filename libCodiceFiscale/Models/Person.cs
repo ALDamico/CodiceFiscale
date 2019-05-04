@@ -20,7 +20,7 @@ namespace libCodiceFiscale.Models
         /// <param name="placeName">Il nome del comune italiano o dello stato estero da usare per inizializzare la proprietà.</param>
         public Person(string placeName) : this()
         {
-            PlaceOfBirth = new ItalianMunicipality(placeName);
+            PlaceOfBirth = new Comuni_Italiani(placeName);
             if (PlaceOfBirth == null)
             {
                 PlaceOfBirth = new ForeignCountry(placeName);

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CodiceFiscaleUI
@@ -24,9 +25,11 @@ namespace CodiceFiscaleUI
         {
             //Imposta la data massima alla giornata odierna
             dtBirthday.MaxDate = DateTime.Now;
-            controller.RetrieveProvincesAsList();
-            drpProvince.DataSource = controller.Provinces;
             controller.RetrieveForeignCountriesAsList();
+            //Task t = new Task(new Action(controller.RetrieveProvincesAsList));
+            //t.Start() ;
+            drpProvince.DataSource = controller.Provinces;
+            //controller.RetrieveForeignCountriesAsList();
             drpForeignCountries.DataSource = controller.ForeignCounties;
 
             InitializeSaveDialog();
@@ -60,7 +63,7 @@ namespace CodiceFiscaleUI
             char gender = Convert.ToChar(drpGender.SelectedItem);
             if (drpItalyOrAbroad.SelectedIndex == 0)
             {
-                controller.CurrentPlace = new ItalianMunicipality(drpMunicipality.SelectedValue.ToString());
+                controller.CurrentPlace = new Comuni_Italiani(drpMunicipality.SelectedValue.ToString());
             }
             else
             {
